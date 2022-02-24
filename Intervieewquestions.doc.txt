@@ -1,0 +1,193 @@
+1.what are block  elements?
+
+A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.
+
+A block-level element always takes up the full width available (stretches out to the left and right as far as it can).
+
+Two commonly used block elements are: <p> and <div>.
+
+The <p> element defines a paragraph in an HTML document.
+
+The <div> element defines a division or a section in an HTML document.
+======================================================================================================================================================
+2.What were the new tags / elements brought in HTML5?
+
+The following tags (elements) have been introduced in HTML5 −
+
+Tags (Elements)	Description
+<article>	Represents an independent piece of content of a document, such as a blog entry or newspaper article
+<aside >	Represents a piece of content that is only slightly related to the rest of the page.
+<audio>	        Defines an audio file.
+<canvas>	This is used for rendering dynamic bitmap graphics on the fly, such as graphs or games.
+<command>	Represents a command the user can invoke.
+<datalist>	Together with the a new list attribute for input can be used to make comboboxes
+<details>	Represents additional information or controls which the user can obtain on demand
+<embed>	        Defines external interactive content or plugin.
+<figure>	Represents a piece of self-contained flow content, typically referenced as a single unit from the main flow of the document.
+<footer>	Represents a footer for a section and can contain information about the author, copyright information, et cetera.
+<header>	Represents a group of introductory or navigational aids.
+<hgroup>	Represents the header of a section.
+<keygen>	Represents control for key pair generation.
+<mark>	        Represents a run of text in one document marked or highlighted for reference purposes, due to its relevance in another context.
+<meter>	        Represents a measurement, such as disk usage.
+<nav>	        Represents a section of the document intended for navigation.
+<output>	Represents some type of output, such as from a calculation done through scripting.
+<progress>	Represents a completion of a task, such as downloading or when performing a series of expensive operations.
+<ruby>	        Together with <rt> and <rp> allow for marking up ruby annotations.
+<section>	Represents a generic document or application section
+<time>	        Represents a date and/or time.
+<video>         Defines a video file.
+<wbr>	        Represents a line break opportunity.
+=========================================================================================================================================================
+3.Have you used PreCSS? What is it?
+No,
+Use Sass-like markup in your CSS. It combines Sass-like syntactical sugar — like variables, conditionals,
+and iterators — with emerging CSS features — like logical and custom properties, media query ranges, and image sets. 
+Stylus and PreCSS belong to "CSS Pre-processors / Extensions" category of the tech stack.
+
+4.What is the difference between Margin and Padding?
+
+• Padding is the space between the border and the content while margin is the space outside the border.
+
+• Padding separates the content of a block from the border. The margin separates one block from the other.
+
+• Padding consists of the background images and background colors applied to content while the margin does not content such.
+
+• Margins of adjacent blocks can overlap while padding does not overlap.
+========================================================================================================================================================
+4.Is padding included in the element?
+
+Padding and Element Width The CSS width property specifies the width of the element's content area. 
+The content area is the portion inside the padding, border, and margin of an element (the box model). 
+So, if an element has a specified width, the padding added to that element will be added to the total width of the element.
+========================================================================================================================================================
+5.What types of selectors are used in css?
+
+CSS selectors are used to "find" (or select) the HTML elements you want to style.
+
+We can divide CSS selectors into five categories:
+
+Simple selectors (select elements based on name, id, class)
+Combinator selectors (select elements based on a specific relationship between them)
+Pseudo-class selectors (select elements based on a certain state)
+Pseudo-elements selectors (select and style a part of an element)
+Attribute selectors (select elements based on an attribute or attribute value)
+
+=======================================================================================================================================================
+
+6.What are the available values for property "position"?
+
+The position property specifies the type of positioning method used for an element (static, relative, absolute, fixed, or sticky).
+=======================================================================================================================================================
+7.What happens when you use each value?
+
+static	         Default value. Elements render in order, as they appear in the document flow	
+
+absolute	The element is positioned relative to its first positioned (not static) ancestor element
+	
+fixed	        The element is positioned relative to the browser window
+	
+relative	The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position	
+
+sticky	         The element is positioned based on the user's scroll position
+
+A sticky element toggles between relative and fixed, depending on the scroll position. 
+It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+
+=======================================================================================================================================================
+
+8.How can I show 2 div tag elements side by side?
+
+3 ways to display two divs side by side
+1.The most common and traditional way (inline-block)
+2.Float Method
+3.Grid
+
+=========================================================================================================================================================
+
+9.Explain the term responsive web design?
+
+Responsive Web Design is about using HTML and CSS to automatically resize a website.
+
+Responsive Web Design is about making a website look good on all devices (desktops, tablets, and phones):
+When making responsive web pages, add the following <meta> element to all your web pages:
+
+Example
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+Media Queries plays an important role in responsive web pages.
+
+With media queries you can define different styles for different browser sizes.
+
+Example:
+Resize the browser window to see that the three elements below will display horizontally on large screens and vertically on small screens:
+
+==========================================================================================================================================================
+10.What is css flexbox?
+The CSS3 flexbox is used to make the elements behave predictably when they are used with different screen sizes and different display devices.
+ It provides a more efficient way to layout, align and distribute space among items in the container.
+
+It is mainly used to make CSS3 capable to change its item?s width and height to best fit for all available spaces. It is preferred over block model.
+
+The CSS3 flexbox contains flex containers and flex items.
+==========================================================================================================================================================
+
+11.What is css opacity?
+
+The opacity property sets the opacity level for an element.
+
+The opacity-level describes the transparency-level, where 1 is not transparent at all, 0.5 is 50% see-through, and 0 is completely transparent.
+=========================================================================================================================================================
+
+12.when click on button u need to scroll to the particular div using HTML?
+
+<a href="#top">Top</a>
+<a href="#middle">Middle</a>
+<a href="#bottom">Bottom</a>
+<div id="top"><a href="top"></a>Top</div>
+<div id="middle"><a href="middle"></a>Middle</div>
+<div id="bottom"><a href="bottom"></a>Bottom</div>
+CSS
+
+#top,#middle,#bottom{
+    height: 600px;
+    width: 300px;
+    background: green; 
+}
+Example http://jsfiddle.net/x4wDk/
+=============================================================================================================================================================
+
+13.What is specificity in CSS?
+
+If there are two or more CSS rules that point to the same element, the selector with the highest specificity value will "win", 
+and its style declaration will be applied to that HTML element.
+
+Think of specificity as a score/rank that determines which style declaration are ultimately applied to an element.
+Every CSS selector has its place in the specificity hierarchy.
+
+There are four categories which define the specificity level of a selector:
+
+Inline styles - Example: <h1 style="color: pink;">
+IDs - Example: #navbar
+Classes, pseudo-classes, attribute selectors - Example: .test, :hover, [href]
+Elements and pseudo-elements - Example: h1, :before
+
+=============================================================================================================================================================
+14.What is Flexbox?
+
+CSS Flexible Layout Box, popularly known as Flexbox is a powerful one-dimensional layout model.
+ It helps to lay, align and distribute items (children) efficiently inside a container (parent).  
+
+Important Features:
+
+One-dimensional layout model: Flex is a one-dimensional layout model as it can only deal with items either horizontally as rows or vertically as columns.
+ On the contrary, the CSS Grid layout can handle rows and columns together.
+
+Creates flexible and responsive layouts: Flexbox gives flex container the ability to customize the items within it, depending on different screen sizes.
+ A flex container can expand its children’s items to fill the available space or it can also shrink them to prevent overflow.
+
+Direction-agnostic: Flexbox is free from any directional constraints unlike Block (vertically biased) and Inline (horizontally biased).
+Super easy to use: It is easy to align items in Flexbox, unlike using float and positioning which are a little frustrating and sometimes difficult to use.
+
+============================================================================================================================================================
+
