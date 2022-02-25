@@ -54,6 +54,10 @@ Stylus and PreCSS belong to "CSS Pre-processors / Extensions" category of the te
 • Padding consists of the background images and background colors applied to content while the margin does not content such.
 
 • Margins of adjacent blocks can overlap while padding does not overlap.
+
+the margin indicates the area outside the border and the padding indicates the area inside the border.
+
+
 ========================================================================================================================================================
 4.Is padding included in the element?
 
@@ -63,7 +67,24 @@ So, if an element has a specified width, the padding added to that element will 
 ========================================================================================================================================================
 5.What types of selectors are used in css?
 
+A CSS selector selects the HTML element(s) for styling purpose. CSS selectors select HTML elements according to its id, class, type, attribute etc.
+
+There are many basic different types of selectors.
+
+Element Selector
+Id Selector
+Class Selector
+Universal Selector
+Group Selector
+
+1. Element selector: The element selector selects HTML elements based on the element name (or tag) for example p, h1, div, span, etc.
 CSS selectors are used to "find" (or select) the HTML elements you want to style.
+2. Id selector: The id selector uses the id attribute of an HTML element to select a specific element.
+
+Note: An id of element is unique on a page to use id selector.
+3. class-selector: The class selector selects HTML elements with a specific class attribute.
+4. universal-selector: The * selector in CSS is used to select all the elements in a HTML document. It also selects all elements which are inside under another element.
+5. Group-selector: This selector is used to style all comma separated elements with the same style.
 
 We can divide CSS selectors into five categories:
 
@@ -83,7 +104,7 @@ The position property specifies the type of positioning method used for an eleme
 
 static	         Default value. Elements render in order, as they appear in the document flow	
 
-absolute	The element is positioned relative to its first positioned (not static) ancestor element
+absolute	The element is positioned relative to its first positioned (not static) ancestor element.With absolute positioning, an element can be placed anywhere on a page.
 	
 fixed	        The element is positioned relative to the browser window
 	
