@@ -212,3 +212,57 @@ Super easy to use: It is easy to align items in Flexbox, unlike using float and 
 
 ============================================================================================================================================================
 
+Javascript questions
+============================================================================================================================================================
+1.Difference between null and undefined?
+
+Difference between Null and Undefined
+
+Null is used to represent an intentional absence of value. It represents a variable whose value is undefined. 
+It accepts only one value, which is null. The Null keyword is used to define the Null type in TypeScript,
+ but it is not useful because we can only assign a null value to it.
+
+Example
+//Variable declared and assigned to null  
+var a = null;   
+console.log( a );   //output: null  
+console.log( typeof(a) );   //output: object  
+
+It represents uninitialized variables in TypeScript and JavaScript. It has only one value, which is undefined.
+ The undefined keyword defines the undefined type in TypeScript, but it is not useful because we can only assign an undefined value to it.
+
+Example
+//Variable declaration without assigning any value to it  
+var a;        
+console.log(a);  //undefined  
+console.log(typeof(a));  //undefined  
+console.log(undeclaredVar);  //Uncaught ReferenceError: undeclaredVar is not defined  
+==============================================================================================================================================================
+2.promises
+
+The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+
+A Promise is in one of these states:
+
+pending: initial state, neither fulfilled nor rejected.
+fulfilled: meaning that the operation was completed successfully.
+rejected: meaning that the operation failed.
+
+var promise = new Promise(function(resolve, reject) {
+  const x = "geeksforgeeks";
+  const y = "geeksforgeeks"
+  if(x === y) {
+    resolve();
+  } else {
+    reject();
+  }
+});
+   
+promise.
+    then(function () {
+        console.log('Success, You are a GEEK');
+    }).
+    catch(function () {
+        console.log('Some error has occurred');
+    });
+============================================================================================================================================================
